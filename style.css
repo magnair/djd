@@ -18,7 +18,7 @@ body {
 
 /* Header and Menu */
 header {
-    background-color: rgba(0, 0, 0, 0.04); /* Semi-transparent background for the menu */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for the menu */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -169,4 +169,15 @@ footer .social-links a {
 
 footer .social-links a:hover {
     text-decoration: underline;
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px; /* Adds extra space below the image */
 }
