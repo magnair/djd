@@ -72,6 +72,7 @@
 
   section.block { padding-block: clamp(4rem, 9vw, 7.5rem); }
   section.block.tight { padding-top: 0; }
+  @media (min-width: 760px) { #watch { padding-top: clamp(3rem, 6vw, 5rem); } }
   .intro { max-width: 40rem; margin: 0 0 clamp(2rem, 4vw, 3rem); color: var(--muted); }
 
   .video { position: relative; aspect-ratio: 16 / 9; background: var(--ph); border-radius: 16px; overflow: hidden; }
