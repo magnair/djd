@@ -110,7 +110,7 @@ function initLightbox() {
   if (!dialog || typeof dialog.showModal !== 'function') return;
   const image = dialog.querySelector('img');
 
-  document.querySelectorAll('.gallery img, .press-img').forEach((el) => {
+  document.querySelectorAll('.gallery img, .press-img, .live-photo, .poster img').forEach((el) => {
     el.addEventListener('click', () => {
       image.src = el.currentSrc || el.src;
       image.alt = el.alt;
@@ -118,10 +118,8 @@ function initLightbox() {
     });
   });
 
-  // Any click that is not on the image closes the dialog, including the close button.
-  dialog.addEventListener('click', (event) => {
-    if (event.target !== image) dialog.close();
-  });
+  // Any click inside the dialog, including on the image, closes it.
+  dialog.addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => image.removeAttribute('src'));
 }
 

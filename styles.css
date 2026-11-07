@@ -82,9 +82,9 @@
   /* Live */
   .show { display: grid; grid-template-columns: 1fr; gap: 2rem; border-top: 1px solid var(--line); padding-top: 2rem; }
   .poster { position: relative; background: var(--ph); overflow: hidden; border-radius: 16px; color: var(--muted); font-size: 0.9rem; }
-  .poster img { display: block; width: 100%; height: auto; }
+  .poster img { display: block; width: 100%; height: auto; cursor: zoom-in; }
   .poster span { position: absolute; left: 0; bottom: 0; padding: 0.9rem; }
-  .live-photo { display: block; width: 100%; height: auto; border-radius: 16px; margin-top: clamp(1.5rem, 4vw, 2.5rem); }
+  .live-photo { display: block; width: 100%; height: auto; border-radius: 16px; margin-top: clamp(1.5rem, 4vw, 2.5rem); cursor: zoom-in; }
   .show h3 { margin: 0 0 0.25rem; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; font-stretch: 80%; line-height: 1.05; letter-spacing: -0.02em; }
   .show .venue { margin: 0 0 1.5rem; color: var(--muted); font-size: 1.15rem; }
   .facts { margin: 0 0 2rem; display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 2rem; }
@@ -146,7 +146,7 @@
   .social a:hover { border-bottom-color: currentColor; }
   .press-img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; margin-bottom: 1.5rem; border-radius: 16px; cursor: zoom-in; }
   .legal { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
-  @media (min-width: 760px) { .foot { grid-template-columns: 1.4fr 1fr; } }
+  @media (min-width: 760px) { .foot { grid-template-columns: 2fr 3fr; } }
 
   /* Material 3 navigation bar (mobile only) */
   .tabbar { display: none; }
